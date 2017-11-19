@@ -1,0 +1,34 @@
+{
+  "sections": [
+    {
+      "id": "highlights",
+      "name": "Highlights",
+      "order": 100
+    },
+    {
+      "id": "links",
+      "name": "Links",
+      "order": 50
+    },
+    {
+      "id": "projects",
+      "name": "Projects",
+      "order": 40
+    },
+    {
+      "id": "other_activities",
+      "name": "Other activities",
+      "order": 30
+    },
+    {
+      "id": "community_tools",
+      "name": "Community Tools",
+      "order": 20
+    },
+    {
+      "id": "contact",
+      "name": "Contact me",
+      "order": 10
+    }
+  ]
+}

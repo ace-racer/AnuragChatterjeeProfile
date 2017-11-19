@@ -1,0 +1,14 @@
+{
+  "details": [
+    {
+      "name": "Get trending news articles and create a HTML table using Python",
+      "details": "Explores the usage of : <ul> <li> Calling third party APIs using Python</li> <li>Using Python packages for operations like creating a HTML page </li><li> Making Python scripts loosely coupled for easier extension</li> <li> Unit testing Python code </li>",
+      "technologies": [ "Python", "Shell" ],
+      "source_code": "https://github.com/ace-racer/NewsArticles",
+      "year": 2017,
+      "month": 10,
+      "in_collaboration_with": "",
+      "order":  10
+    }
+  ]
+}
