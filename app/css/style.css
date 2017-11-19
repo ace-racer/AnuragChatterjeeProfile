@@ -11,5 +11,13 @@
 
 .container-img-small{
     height:25%;
-    width:100%
+    width:75%
+}
+
+.heading{
+    padding:20px;
+}
+
+td,th{
+    padding:10px;
 }
