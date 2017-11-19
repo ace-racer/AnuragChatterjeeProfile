@@ -42,12 +42,11 @@
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
     <link rel="shortcut icon" href="assets/ico/favicon.png">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-    <script src="ng/controller/basicProfileDetails.js"></script>
-    <!--<script src="ng/controller/sections.js"></script>-->
+    <script src="ng/controller/basicProfileDetails.js"></script>    
 </head>
 
 <body>
-    <div ng-app="profileApp" ng-controller="basicProfileDetailsCtrl">
+    <div ng-app="profileApp" ng-controller="basicProfileDetailsCtrl" data-ng-init="populateData()">
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="navbar-inner">
                 <div class="container-fluid">
@@ -57,16 +56,16 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="brand" href="#">{{fullName}} - Profile</a>
-                    <!--<div class="nav-collapse collapse" ng-controller="sectionsCtrl">
+                    <div class="nav-collapse collapse">
                         <ul class="nav">
                             <li ng-repeat="sectionDetail in sectionDetails">
                                 <a>{{sectionDetail.name}}</a>
                             </li>
-                            <li class="active"><a href="#">Home</a></li>
+                            <!--<li class="active"><a href="#">Home</a></li>
                             <li><a href="#about">About</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#contact">Contact</a></li>-->
                         </ul>
-                    </div>-->
+                    </div>
                     <!--/.nav-collapse -->
                 </div>
             </div>
