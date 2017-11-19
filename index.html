@@ -42,11 +42,11 @@
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
     <link rel="shortcut icon" href="assets/ico/favicon.png">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-    <script src="ng/controller/basicProfileDetails.js"></script>    
+    <script src="ng/controller/basicProfileDetails.js"></script>
 </head>
 
 <body>
-    <div ng-app="profileApp" ng-controller="basicProfileDetailsCtrl" data-ng-init="populateData()">
+    <div ng-app="profileApp" ng-controller="basicProfileDetailsCtrl">
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="navbar-inner">
                 <div class="container-fluid">
@@ -58,7 +58,7 @@
                     <a class="brand" href="#">{{fullName}} - Profile</a>
                     <div class="nav-collapse collapse">
                         <ul class="nav">
-                            <li ng-repeat="sectionDetail in sectionDetails">                               
+                            <li ng-repeat="sectionDetail in sectionDetails.sections">
                                 <a ng-href="#{{sectionDetail.id}}">{{sectionDetail.name}}</a>
                             </li>
                             <!--<li class="active"><a href="#">Home</a></li>
@@ -77,13 +77,13 @@
                     <div class="well sidebar-nav">
                         <ul class="nav nav-list">
                             <li class="nav-header">Sidebar</li>
-                            <li class="active" ng-repeat="sectionDetail in sectionDetails">
+                            <li ng-repeat="sectionDetail in sectionDetails.sections">
                                 <a ng-href="#{{sectionDetail.id}}">{{sectionDetail.name}}</a>
                             </li>
                             <!--<li class="active"><a href="#">Link</a></li>
                             <li><a href="#">Link</a></li>
                             <li><a href="#">Link</a></li>
-                            <li><a href="#">Link</a></li>-->                           
+                            <li><a href="#">Link</a></li>-->
                         </ul>
                     </div><!--/.well -->
                 </div><!--/span-->

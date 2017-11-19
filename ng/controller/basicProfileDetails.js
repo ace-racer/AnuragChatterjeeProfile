@@ -1,28 +1,18 @@
 var app = angular.module('profileApp', []);
-app.controller('basicProfileDetailsCtrl', function ($scope, $http) {
+app.controller('basicProfileDetailsCtrl', function ($scope, $http, $timeout) {
     $scope.firstName = "Anurag";
     $scope.lastName = "Chatterjee";
     $scope.fullName = $scope.firstName + " " + $scope.lastName;
-    $scope.currentYear = new Date().getFullYear();       
+    $scope.currentYear = new Date().getFullYear();
+    $scope.sectionDetails = [];
+
     $http.get('../../ProfileData/sections.json').then(function (res) {
-        debugger;
-        $scope.sectionDetails = res.data;
-        $scope.$watch('sectionDetails');
-        //$timeout(function () {
-            
-        //})
-        //if (res) {
-        //    //$timeout(function () {
-        //    //    debugger;
-        //    //    $scope.sectionDetails = res.data;
-        //    //}, 1000)
-        //    debugger;
-        //    $scope.sectionDetails = res.data;
-        //    //                $scope.$apply();
-        //} else {
-        //    console.log("There is no response received");
-        //}
+        if (res) {
+            $scope.sectionDetails = res.data;
+        } else {
+            console.log("There was no response while getting the JSON")
+        }
     }).catch(function (data) {
         console.log("An error occurred while trying to find the sections file");
-    });   
+    });    
 });
