@@ -43,6 +43,7 @@
     <link rel="shortcut icon" href="assets/ico/favicon.png">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <script src="ng/controller/basicProfileDetails.js"></script>
+    <!--<script src="ng/controller/sections.js"></script>-->
 </head>
 
 <body>
@@ -56,13 +57,17 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="brand" href="#">{{fullName}} - Profile</a>
-                    <div class="nav-collapse collapse">
+                    <!--<div class="nav-collapse collapse" ng-controller="sectionsCtrl">
                         <ul class="nav">
+                            <li ng-repeat="sectionDetail in sectionDetails">
+                                <a>{{sectionDetail.name}}</a>
+                            </li>
                             <li class="active"><a href="#">Home</a></li>
                             <li><a href="#about">About</a></li>
                             <li><a href="#contact">Contact</a></li>
                         </ul>
-                    </div><!--/.nav-collapse -->
+                    </div>-->
+                    <!--/.nav-collapse -->
                 </div>
             </div>
         </div>
