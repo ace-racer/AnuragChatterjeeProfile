@@ -1,4 +1,4 @@
-var profileApp = angular.module('profileApp', ['ngRoute'])
+var profileApp = angular.module('profileApp', ['ngRoute', 'ngSanitize'])
     .config(['$routeProvider', '$httpProvider', function ($routeProvider, $httpProvider) {
         $routeProvider
            .when("/", {
@@ -6,5 +6,6 @@ var profileApp = angular.module('profileApp', ['ngRoute'])
                templateUrl: "/app/views/basicdetails.html",
            }).when("/highlights", {
                controller: "highlightsCtrl",
-               templateUrl: "/app/views/highlights.html"})
-    }])
+               templateUrl: "/app/views/highlights.html"
+           })
+    }]).run();

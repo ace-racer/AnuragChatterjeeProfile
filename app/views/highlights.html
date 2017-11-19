@@ -1,0 +1,29 @@
+<div>
+    <div>
+        <div class="row">
+            <div class="col-xs-12">
+                <p>
+                    Career highlights
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Logo</th>
+                            <th>Organization/Institute</th>
+                            <th>Period</th>                            
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="item in information">
+                            <td class="col-md-4"><img ng-src="{{item.logo_url}}" /></td>
+                            <td class="col-md-2">{{item.institute}}</td>
+                            <td class="col-md-4">{{item.period}}</td>
+                            <td class="col-md-2"><div ng-bind-html="item.description"></div></td>                            
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
