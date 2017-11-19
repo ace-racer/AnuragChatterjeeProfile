@@ -1,28 +1,37 @@
 <div>
     <div>
         <div class="row">
-            <div class="col-xs-12">
+            <div class="col-md-12">
                 <p>
-                    Career highlights
+                    Industrial and academic highlights
                 </p>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Logo</th>
-                            <th>Organization/Institute</th>
-                            <th>Period</th>                            
-                            <th>Description</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr ng-repeat="item in information">
-                            <td class="col-md-4"><img ng-src="{{item.logo_url}}" /></td>
-                            <td class="col-md-2">{{item.institute}}</td>
-                            <td class="col-md-4">{{item.period}}</td>
-                            <td class="col-md-2"><div ng-bind-html="item.description"></div></td>                            
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 container-left">
+                            <img ng-src="{{profileImageUrl}}" alt="Profile image" class="container-img-big" />
+                        </div>
+                        <div class="col-md-8">
+                            <table class="table-responsive table-hover table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Logo</th>
+                                        <th>Organization/Institute</th>
+                                        <th>Period</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr ng-repeat="item in information">
+                                        <td class="col-md-4"><a ng-href="{{item.institute_url}}"><img ng-src="{{item.logo_url}}" class="container-img-small" /></a></td>
+                                        <td class="col-md-2">{{item.institute}}</td>
+                                        <td class="col-md-2">{{item.period}}</td>
+                                        <td class="col-md-4"><div ng-bind-html="item.description"></div></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>                                     
+                </div>                               
             </div>
         </div>
     </div>

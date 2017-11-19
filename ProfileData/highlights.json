@@ -1,17 +1,19 @@
 {
-  "profile_image": "https://drive.google.com/file/d/177E3Io-0iSM28S2F_kkly9-IzZIy8595/view?usp=sharing",
+  "profile_image": "img/anuragprofile.jpg",
   "information": [
     {
       "institute": "Microsoft",
-      "period": "",
+      "institute_url": "https://www.microsoft.com/india/globaldelivery/",
+      "period": "June 2014 to present",
       "logo_url": "http://ncmedia.azureedge.net/ncmedia/2014/10/MSFT_logo_rgb_C-Gray.png",
-      "description": ""
+      "description": "Working as a technical consultant in Microsoft India where I design and build solutions for Microsoft's customer using the latest of the Microsoft stack. Experienced in interaction with customers across geographies and have played the roles of technial lead, project manager and business analyst."
     },
     {
       "institute": "Indian Institute of Engineering Science and Technology, Shibpur",
+      "institute_url": "http://www.iiests.ac.in/",
       "period": "July 2010 to May 2014",
       "logo_url": "http://www.iiests.ac.in/images/iiest-logo.png",
-      "description": "I obtained by Undergraduate degree (Bachelor of Engineering) in Computer Science and Technology here."
+      "description": "Obtained my Undergraduate degree (Bachelor of Engineering) in Computer Science and Technology here. Took courses in programming, algorithms, data-structures, discrete mathematics, operating systems, compiler theory and microprocessors among many others."
     }
   ]
 }

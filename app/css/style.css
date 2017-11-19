@@ -1,0 +1,15 @@
+
+.container-left{
+    float:left
+}
+
+
+.container-img-big{
+    height:75%;
+    width:75%
+}
+
+.container-img-small{
+    height:25%;
+    width:100%
+}

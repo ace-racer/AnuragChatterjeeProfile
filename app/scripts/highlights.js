@@ -3,8 +3,7 @@ angular.module('profileApp')
         $scope.highlights = [];
 
         dataSvc.getHighlights().then(function (res) {
-            if (res) {
-                debugger;
+            if (res) {                
                 var highlightsContents = res.data;
                 $scope.profileImageUrl = highlightsContents.profile_image;
                 $scope.information = highlightsContents.information;
