@@ -1,0 +1,10 @@
+var profileApp = angular.module('profileApp', ['ngRoute'])
+    .config(['$routeProvider', '$httpProvider', function ($routeProvider, $httpProvider) {
+        $routeProvider
+           .when("/", {
+               controller: "basicProfileDetailsCtrl",
+               templateUrl: "/app/views/basicdetails.html",
+           }).when("/highlights", {
+               controller: "highlightsCtrl",
+               templateUrl: "/app/views/highlights.html"})
+    }])
