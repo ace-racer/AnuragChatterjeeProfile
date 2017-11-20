@@ -7,5 +7,8 @@ var profileApp = angular.module('profileApp', ['ngRoute', 'ngSanitize'])
            }).when("/highlights", {
                controller: "basicProfileDetailsCtrl",
                templateUrl: "/app/views/basicdetails.html"
+           }).when("/links", {
+               controller: "contactMeCtrl",
+               templateUrl: "/app/views/otherprofiles.html"
            })
     }]).run();

@@ -6,6 +6,9 @@ angular.module('profileApp')
             },
             getSections: function () {
                 return $http.get("../../ProfileData/sections.json");
+            },
+            getOtherProfiles: function () {
+                return $http.get("../../ProfileData/links.json");
             }
         }
     }]);

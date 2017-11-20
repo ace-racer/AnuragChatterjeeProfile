@@ -8,7 +8,7 @@
     },
     {
       "name": "FaceBook",
-      "image_url": "https://higherlogicdownload.s3.amazonaws.com/VMUG/469c9ce4-19fc-442d-8641-0373c550b095/UploadedImages/NJVMUG/LinkedIn-Logo-500x500.png",
+      "image_url": "https://www.seeklogo.net/wp-content/uploads/2016/09/facebook-icon-preview-1.png",
       "profile_url": "https://www.facebook.com/anurag.chatterjee.7923",
       "order": 20
     },
@@ -17,6 +17,12 @@
       "image_url": "https://n6-img-fp.akamaized.net/free-icon/twitter_318-136405.jpg?size=338&ext=jpg",
       "profile_url": "https://twitter.com/anuragchat92",
       "order": 10
+    },
+    {
+      "name": "GitHub",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Octicons-logo-github.svg",
+      "profile_url": "https://github.com/ace-racer",
+      "order": 28
     }
   ]
 }

@@ -7,7 +7,7 @@
     },
     {
       "id": "links",
-      "name": "Links",
+      "name": "My profiles and contact me",
       "order": 50
     },
     {
@@ -24,11 +24,6 @@
       "id": "community_tools",
       "name": "Community Tools",
       "order": 20
-    },
-    {
-      "id": "contact",
-      "name": "Contact me",
-      "order": 10
     }
   ]
 }
