@@ -2,27 +2,38 @@
   "details": [
     {
       "name": "Linkedin",
-      "image_url": "https://higherlogicdownload.s3.amazonaws.com/VMUG/469c9ce4-19fc-442d-8641-0373c550b095/UploadedImages/NJVMUG/LinkedIn-Logo-500x500.png",
+      "image_url": "",
       "profile_url": "https://www.linkedin.com/in/anurag-chatterjee/",
+      "description": "Please connect with me <a href=\"https://www.linkedin.com/in/anurag-chatterjee/\">here</a> and become a part of my professional network.",
       "order": 30
     },
     {
       "name": "FaceBook",
-      "image_url": "https://www.seeklogo.net/wp-content/uploads/2016/09/facebook-icon-preview-1.png",
+      "image_url": "",
       "profile_url": "https://www.facebook.com/anurag.chatterjee.7923",
+      "description": "Connect with me <a href=\"https://www.facebook.com/anurag.chatterjee.7923\">here</a> and we can be friends!",
       "order": 20
     },
     {
       "name": "Twitter",
-      "image_url": "https://n6-img-fp.akamaized.net/free-icon/twitter_318-136405.jpg?size=338&ext=jpg",
+      "image_url": "",
       "profile_url": "https://twitter.com/anuragchat92",
+      "description": "You can follow me on Twitter <a href=\"https://twitter.com/anuragchat92\">here</a>.",
       "order": 10
     },
     {
       "name": "GitHub",
-      "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Octicons-logo-github.svg",
+      "image_url": "",
       "profile_url": "https://github.com/ace-racer",
-      "order": 28
+      "description": "You can find all my code projects <a href=\"https://github.com/ace-racer\">here</a>.",
+      "order": 25
+    },
+    {
+      "name": "Gmail",
+      "image_url": "",
+      "profile_url": "",
+      "description": "Drop me an email <a href=\"mailto:anuragchatterjee92@gmail.com\">here</a>.",
+      "order": 29
     }
   ]
 }
