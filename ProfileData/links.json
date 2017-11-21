@@ -1,14 +1,14 @@
 {
   "details": [
     {
-      "name": "Linkedin",
+      "name": "LinkedIn",
       "image_url": "",
       "profile_url": "https://www.linkedin.com/in/anurag-chatterjee/",
       "description": "Please connect with me <a href=\"https://www.linkedin.com/in/anurag-chatterjee/\">here</a> and become a part of my professional network.",
       "order": 30
     },
     {
-      "name": "FaceBook",
+      "name": "Facebook",
       "image_url": "",
       "profile_url": "https://www.facebook.com/anurag.chatterjee.7923",
       "description": "Connect with me <a href=\"https://www.facebook.com/anurag.chatterjee.7923\">here</a> and we can be friends!",

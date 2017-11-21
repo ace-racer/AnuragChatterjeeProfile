@@ -10,5 +10,14 @@ var profileApp = angular.module('profileApp', ['ngRoute', 'ngSanitize'])
            }).when("/links", {
                controller: "contactMeCtrl",
                templateUrl: "/app/views/otherprofiles.html"
+           }).when("/projects", {
+               controller: "projectsCtrl",
+               templateUrl: "/app/views/projects.html"
+           }).when("/other_activities", {
+               controller: "otherActivitiesCtrl",
+               templateUrl: "/app/views/otherActivities.html"
+           }).when("/community_tools", {
+               controller: "communityToolsCtrl",
+               templateUrl: "/app/views/communityTools.html"
            })
     }]).run();

@@ -1,0 +1,11 @@
+{
+  "details": [
+    {
+      "name": "Technical Blog - Musings of a software enthusiast",
+      "item_url": "http://musingsofasoftwareenthusiast.blogspot.in/",
+      "url_text": "Go to blog!",
+      "description": "A technical blog to share my learnings and ideas that I have gathered in my years on the field and the academia.",
+      "order": 30
+    }
+  ]
+}

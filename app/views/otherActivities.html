@@ -1,0 +1,31 @@
+<div>
+    <div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="container">
+                    <h3 class="heading">
+                        Other Activities
+                    </h3>
+                </div>
+                <div class="col-xs-8 container">
+                    <table class="table-responsive table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th class="col-xs-2">Name</th>
+                                <th class="col-xs-2">Location</th>
+                                <th class="col-xs-4">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="item in otherActivitiesDetails | orderBy : 'order' : true">
+                                <td><span>{{item.name}}</span></td>
+                                <td><a ng-href="{{item.item_url}}">{{item.url_text}}</a></td>                                
+                                <td><div ng-bind-html="item.description"></div></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

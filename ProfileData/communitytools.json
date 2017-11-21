@@ -1,0 +1,16 @@
+{
+  "details": [
+    {
+      "topic": "Microsoft Dynamics Customer Engagement (previously Dynamics CRM) development tools",
+      "subtopic": "Advanced find Fetch XML downloaded from Dynamics CRM User Interface to C#/ JavaScript string convertor",
+      "description": "A tool to improve your productivity while developing applications that query data from Dynamics CRM using fetch expressions. Please find the online tool <a href=\"https://ace-racer.github.io/FetchXmlToString/\">here.</a>",
+      "order": 30
+    },
+    {
+      "topic": "Microsoft Dynamics Customer Engagement (previously Dynamics CRM) development tools",
+      "subtopic": "Advanced find Fetch XML downloaded from Dynamics CRM User Interface to C#/ JavaScript string convertor add-on for XRM toolkit",
+      "description": "A tool to improve your productivity while developing applications that query data from Dynamics CRM using fetch expressions. Please find the online tool <a href=\"https://ace-racer.github.io/FetchXmlToString/\">here.</a>",
+      "order": 29
+    }
+  ]
+}
