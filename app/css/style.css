@@ -21,3 +21,13 @@
 td,th{
     padding:10px;
 }
+
+.tag-span{
+    background-color:lightgray;
+    text-align:center;
+    margin:3px;    
+}
+
+footer{
+    margin-top:500px;
+}
