@@ -5,7 +5,7 @@ angular.module('profileApp')
                 return $http.get("../../ProfileData/highlights.json");
             },
             getSections: function () {
-                return $http.get("../../ProfileData/sections.json");
+                return $http.get("../ProfileData/sections.json");
             },
             getOtherProfiles: function () {
                 return $http.get("../../ProfileData/links.json");
