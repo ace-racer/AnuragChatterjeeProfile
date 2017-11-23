@@ -3,21 +3,21 @@ var profileApp = angular.module('profileApp', ['ngRoute', 'ngSanitize'])
         $routeProvider
            .when("/", {
                controller: "basicProfileDetailsCtrl",
-               templateUrl: "/app/views/basicdetails.html",
+               templateUrl: "app/views/basicdetails.html",
            }).when("/highlights", {
                controller: "basicProfileDetailsCtrl",
-               templateUrl: "/app/views/basicdetails.html"
+               templateUrl: "app/views/basicdetails.html"
            }).when("/links", {
                controller: "contactMeCtrl",
-               templateUrl: "/app/views/otherprofiles.html"
+               templateUrl: "app/views/otherprofiles.html"
            }).when("/projects", {
                controller: "projectsCtrl",
-               templateUrl: "/app/views/projects.html"
+               templateUrl: "app/views/projects.html"
            }).when("/other_activities", {
                controller: "otherActivitiesCtrl",
-               templateUrl: "/app/views/otherActivities.html"
+               templateUrl: "app/views/otherActivities.html"
            }).when("/community_tools", {
                controller: "communityToolsCtrl",
-               templateUrl: "/app/views/communityTools.html"
+               templateUrl: "app/views/communityTools.html"
            })
     }]).run();
