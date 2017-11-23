@@ -14,7 +14,7 @@
       "name": "A bot with intelligence derived from the LUIS framework and integrating with Dynamics CRM to perform simple operations",
       "details": "Explores the usage of : <ul> <li> Microsoft Bot framework to create conversational agents</li> <li>Using the LUIS framework to gather intents from the conversations</li><li>Integrate with Dynamics CRM (Microsoft's CRM solution) to process the intent</li>",
       "tags": [ "C#", "Dynamics CRM", "Dynamics 365", "Bot framework", "LUIS", "Microsoft" ],
-      "project_url": "https://github.com/ace-racer/NewsArticles",
+      "project_url": "https://github.com/ace-racer/DynamicsLuisBot",
       "year": 2017,
       "month": 3,
       "in_collaboration_with": "",
