@@ -31,24 +31,14 @@
       "order": 80
     },
     {
-      "name": "A bot with intelligence derived from the LUIS framework and integrating with Dynamics CRM to perform simple operations",
-      "details": "Explores the usage of : <ul> <li> Microsoft Bot framework to create conversational agents</li> <li>Using the LUIS framework to gather intents from the conversations</li><li>Integrate with Dynamics CRM (Microsoft's CRM solution) to process the intent</li>",
-      "tags": [ "C#", "Dynamics CRM", "Dynamics 365", "Bot framework", "LUIS", "Microsoft" ],
-      "project_url": "https://github.com/ace-racer/DynamicsLuisBot",
-      "year": 2017,
-      "month": 3,
-      "in_collaboration_with": "",
-      "order": 90
-    },
-    {
-      "name": "A bot with intelligence derived from the LUIS framework and integrating with Dynamics CRM to perform simple operations",
-      "details": "Explores the usage of : <ul> <li> Microsoft Bot framework to create conversational agents</li> <li>Using the LUIS framework to gather intents from the conversations</li><li>Integrate with Dynamics CRM (Microsoft's CRM solution) to process the intent</li>",
-      "tags": [ "C#", "Dynamics CRM", "Dynamics 365", "Bot framework", "LUIS", "Microsoft" ],
-      "project_url": "https://github.com/ace-racer/DynamicsLuisBot",
-      "year": 2017,
-      "month": 3,
-      "in_collaboration_with": "",
-      "order": 90
+      "name": "A simulator for a temporal language called Tempura",
+      "details": "This was my undergraduate project where our team built an lexer and parser for programs written in Tempura language. A interpreter was built that would execute the code and generate diagrams illustrating the execution of the Tempura program.",
+      "tags": [ "Java", "JFlex", "Byaccj", "Java Swing"],
+      "project_url": "https://github.com/ace-racer/tempura-interpreter-simulator",
+      "year": 2013,
+      "month": 8,
+      "in_collaboration_with": [ "https://www.linkedin.com/in/anirban-banerjee-68031254/", "https://www.linkedin.com/in/subhasish-kundu-9b4b8136/" ],
+        "order":95
     }
   ]
 }
