@@ -2,13 +2,43 @@
   "details": [
     {
       "name": "Get trending news articles and create a HTML table using Python",
-      "details": "Explores the usage of : <ul> <li> Calling third party APIs using Python</li> <li>Using Python packages for operations like creating a HTML page </li><li> Making Python scripts loosely coupled for easier extension</li> <li> Unit testing Python code </li><li>Shell script to run the Python script</li>",
+      "details": "Explores the usage of : <ul> <li> Calling third party APIs using Python</li> <li>Using Python packages for operations like creating a HTML page </li><li> Making Python scripts loosely coupled for easier extension</li> <li> Unit testing Python code </li><li>Shell script to run the Python script</li></ul>",
       "tags": [ "Python", "Shell" ],
       "project_url": "https://github.com/ace-racer/NewsArticles",
       "year": 2017,
       "month": 10,
       "in_collaboration_with": "",
       "order": 100
+    },
+    {
+      "name": "A bot with intelligence derived from the LUIS framework and integrating with Dynamics CRM to perform simple operations",
+      "details": "Explores the usage of : <ul> <li> Microsoft Bot framework to create conversational agents</li> <li>Using the LUIS framework to gather intents from the conversations</li><li>Integrate with Dynamics CRM (Microsoft's CRM solution) to process the intent</li></ul>",
+      "tags": [ "C#", "Dynamics CRM", "Dynamics 365", "Bot framework", "LUIS", "Microsoft" ],
+      "project_url": "https://github.com/ace-racer/DynamicsLuisBot",
+      "year": 2017,
+      "month": 3,
+      "in_collaboration_with": "",
+      "order": 90
+    },
+    {
+      "name": "A Google chrome extension to remove 'Sarahah' app posts from Facebook news feed.",
+      "details": "Sarahah app was viral during July-October 2017. However, I did not like these posts in my Facebook feed when browsing through Facebook in my PC, so created this extension to remove these posts. It used: <ul> <li> JavaScript to build a polling Google chrome extension and filtering posts based on keyword</li> <li>A simple OCR processor using Python and Py tesseract package that could read text from images</li></ul>",
+      "tags": [ "Google Chrome extension", "OCR", "Python", "JavaScript" ],
+      "project_url": "https://github.com/ace-racer/NoSarahahInFbChromeExtension",
+      "year": 2017,
+      "month": 8,
+      "in_collaboration_with": "",
+      "order": 80
+    },
+    {
+      "name": "A bot with intelligence derived from the LUIS framework and integrating with Dynamics CRM to perform simple operations",
+      "details": "Explores the usage of : <ul> <li> Microsoft Bot framework to create conversational agents</li> <li>Using the LUIS framework to gather intents from the conversations</li><li>Integrate with Dynamics CRM (Microsoft's CRM solution) to process the intent</li>",
+      "tags": [ "C#", "Dynamics CRM", "Dynamics 365", "Bot framework", "LUIS", "Microsoft" ],
+      "project_url": "https://github.com/ace-racer/DynamicsLuisBot",
+      "year": 2017,
+      "month": 3,
+      "in_collaboration_with": "",
+      "order": 90
     },
     {
       "name": "A bot with intelligence derived from the LUIS framework and integrating with Dynamics CRM to perform simple operations",
