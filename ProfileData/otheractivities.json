@@ -6,6 +6,13 @@
       "url_text": "Go to blog!",
       "description": "A technical blog to share my learnings and ideas that I have gathered in my years on the field and the academia.",
       "order": 30
+    },
+    {
+      "name": "ECommerce website and app - Sharmile Jewellery",
+      "item_url": "http://www.sharmileejewellery.com/",
+      "url_text": "Go to site!",
+      "description": "A website to showcase the products available for sale on Sharmilee along with Payment gateway integeration. The site is built on top of Azure PaaS offerings. The companion app for point of sale and administration is built using Xamarin for Android.",
+      "order": 25
     }
   ]
 }
