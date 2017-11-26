@@ -32,7 +32,7 @@
     },
     {
       "name": "A simulator for a temporal language called Tempura",
-      "details": "This was my undergraduate project where our team built an lexer and parser for programs written in Tempura language. A interpreter was built that would execute the code and generate diagrams illustrating the execution of the Tempura program.",
+      "details": "This was my undergraduate project where we built a lexer and parser for programs written in Tempura language. A module was also built that would execute the Tempura code after interpreting it and generate diagrams illustrating the execution of the Tempura program.",
       "tags": [ "Java", "JFlex", "Byaccj", "Java Swing"],
       "project_url": "https://github.com/ace-racer/tempura-interpreter-simulator",
       "year": 2013,
