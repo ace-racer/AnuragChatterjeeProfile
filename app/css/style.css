@@ -31,3 +31,10 @@ td,th{
 footer{
     margin-top:500px;
 }
+
+.tag-span-found{
+    background-color:lightgreen;
+    text-align:center;
+    margin:3px;
+    font-weight: bold;    
+}

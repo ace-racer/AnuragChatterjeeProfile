@@ -35,7 +35,7 @@
                                 <td><div ng-bind-html="item.details"></div></td>
                                 <td><a ng-href="{{item.project_url}}">{{item.project_url}}</a></td>
                                 <td>
-                                    <span ng-repeat="tag in item.tags" class="tag-span">{{tag}}</span>
+                                    <span ng-repeat="tag in item.tags" ng-class="getTagClass(tag)">{{tag}}</span>
                                 </td>
                                 <td><span>{{item.monthName}}, {{item.year}}</span></td>                                
                             </tr>

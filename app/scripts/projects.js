@@ -1,6 +1,7 @@
 angular.module('profileApp')
-    .controller('projectsCtrl', ['$scope', '$location', 'dataSvc', function ($scope, $location, dataSvc) {
+    .controller('projectsCtrl', ['$scope', '$location', 'dataSvc', function ($scope, $location, dataSvc) {        
         $scope.allProjectDetails = [];
+        $scope.tagClasses = {};
 
         dataSvc.getProjects().then(function (res) {
             if (res) {
@@ -36,9 +37,9 @@ angular.module('profileApp')
         /*
          Get the projects with the provided text
          */
-        $scope.searchItemWithText = function () {
-            debugger;
+        $scope.searchItemWithText = function () {            
             text = $scope.filterText;
+            $scope.tagClasses = {};
             var minimumCharactersForSearch = 1;
             if (text && text.length > minimumCharactersForSearch) {
                 var projectDetails = $scope.allProjectDetails;
@@ -46,6 +47,9 @@ angular.module('profileApp')
 
                 // for each project details
                 for (var itr = 0; itr < projectDetails.length; itr++) {
+
+                    var shouldAddProject = true;
+
                     // for each tag in the project details
                     for (var jtr = 0; jtr < projectDetails[itr].tags.length; jtr++) {
                         var textLower = text.toLowerCase();
@@ -55,8 +59,15 @@ angular.module('profileApp')
                         if(tagItemLower.indexOf(textLower) >= 0)
                         {
                             // Add the item only once
-                            projectDetailsToShow.push(projectDetails[itr]);
-                            break;
+                            if (shouldAddProject) {                             
+                                projectDetailsToShow.push(projectDetails[itr]);
+                                shouldAddProject = false;
+                            }
+
+                            // Add class for the Tag Span
+                            if ($scope.tagClasses[projectDetails[itr].tags[jtr]] == null) {
+                                $scope.tagClasses[projectDetails[itr].tags[jtr]] = "tag-span-found";
+                            }                    
                         }
                     }
                 }
@@ -66,6 +77,14 @@ angular.module('profileApp')
             }
 
             $scope.projectDetails = projectDetailsToShow;
+        }
+
+        $scope.getTagClass = function (tagName) {
+            if ($scope.tagClasses[tagName] != null) {
+                return $scope.tagClasses[tagName];
+            } else {
+                return "tag-span";
+            }
         }
 
     }]);
