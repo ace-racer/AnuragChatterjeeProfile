@@ -25,7 +25,8 @@ td,th{
 .tag-span{
     background-color:lightgray;
     text-align:center;
-    margin:3px;    
+    margin:3px;  
+    padding: 5px;  
 }
 
 footer{
@@ -36,5 +37,6 @@ footer{
     background-color:lightgreen;
     text-align:center;
     margin:3px;
-    font-weight: bold;    
+    font-weight: bold; 
+    padding: 5px;   
 }
