@@ -42,7 +42,7 @@
     },
     {
       "name": "A Python application to gather insights from WhatsApp conversations.",
-      "details": "The application will help the user to easily print messages from a Python conversation as a HTML page with built in functionality to perform a search on the messages and see only the messages that might be relevant for the user. The application follows OOPs patterns and is designed to be easily extensible with new functionality.",
+      "details": "The application will help the user to easily print messages from a WhatsApp conversation as a HTML page with built in functionality to perform a search on the messages and see only the messages that might be relevant for the user. The application follows OOPs patterns and is designed to be easily extensible with new functionality.",
       "tags": [ "Python", "JQuery", "Templates", "JavaScript", "CSS", "extensible"],
       "project_url": "https://github.com/ace-racer/WhatsAppMessagesInsights",
       "year": 2017,
