@@ -15,7 +15,7 @@ Steps to set up HTTP server quickly:
 
 ## Frameworks used ##
 1. **NPM to run a local server** - This was required to locally check if data was correctly fetched from JSON files in the Angular controller
-  * Link: https://www.npmjs.com/
+   * Link: https://www.npmjs.com/
 2. **Angular JS v1.2** - Angular is used extensively to perform data binding and show data from the JSON files that are stored in the ProfileData folder. 
    The search functionality in the *Projects* page shows the power of data binding with a few lines of code
    * Link: https://angularjs.org/
@@ -36,7 +36,7 @@ Steps to set up HTTP server quickly:
      However, if you want to add your own cool new section, then you would need to perform the items in the next section (no pun intended)
 	 
 ## Add a new section ##
-1. Before I continue, it is expected that you have some basic understanding of how Angular works, if not then understand it and then proceed further. Else, proceed at your own risk.
+1. Before I continue, it is expected that you have some basic understanding of how Angular works.
 2. Design the data model of the data that is to be shown in the new section and define it as a JSON file and put it inside the ProfileData folder.
 3. Add your section to the sections.json following the format of the existing data
 4. Navigate to app/scripts and open dataSvc.js. Add a method there and perform a get operation to retrieve the values from the newly created JSON
