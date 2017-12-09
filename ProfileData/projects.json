@@ -43,7 +43,7 @@
     {
       "name": "A Python application to gather insights from WhatsApp conversations.",
       "details": "The application will help the user to easily print messages from a Python conversation as a HTML page with built in functionality to perform a search on the messages and see only the messages that might be relevant for the user. The application follows OOPs patterns and is designed to be easily extensible with new functionality.",
-      "tags": [ "Python", "JQuery", "Templates", "JavaScript", "CSS"],
+      "tags": [ "Python", "JQuery", "Templates", "JavaScript", "CSS", "extensible"],
       "project_url": "https://github.com/ace-racer/WhatsAppMessagesInsights",
       "year": 2017,
       "month": 12,
@@ -53,7 +53,7 @@
     {
       "name": "A web app to showcase my own professional and academic journey",
       "details": "This app is built using AngularJS where data from JSON is fed into the angular app. The design is extensible and the content of the web app can easily be updated by updating the JSON data. It can then be hosted as a GITHUB pages application just like this one!!",
-      "tags": [ "AngularJS", "JSON", "HTML"],
+      "tags": [ "AngularJS", "JSON", "HTML", "data-binding", "extensible"],
       "project_url": "https://github.com/ace-racer/AnuragChatterjeeProfile",
       "year": 2017,
       "month": 11,
