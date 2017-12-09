@@ -32,13 +32,13 @@ Steps to set up HTTP server quickly:
    * **otheractivities.json:** Details of other relevant activities that you are doing and want the world to know about!
    * **projects.json:** Details of cool projects that you have worked on and want the world to know about. Do note that there is an *Awesome* search feature in the projects page based on the tags.
      So, choose your tags wisely!!
-   * **sections.json:** The sections that one will see in your web page. Well, you would not want to add items to it and might want to rename the sections only.
+   * **generaldetails.json:** The name of the user and the sections that one will see in your web page. Well, you would not want to add items to the list of sections and might want to rename the sections only.
      However, if you want to add your own cool new section, then you would need to perform the items in the next section (no pun intended)
 	 
 ## Add a new section ##
 1. Before I continue, it is expected that you have some basic understanding of how Angular works.
 2. Design the data model of the data that is to be shown in the new section and define it as a JSON file and put it inside the ProfileData folder.
-3. Add your section to the sections.json following the format of the existing data
+3. Add your section to the generaldetails.json following the format of the existing data
 4. Navigate to app/scripts and open dataSvc.js. Add a method there and perform a get operation to retrieve the values from the newly created JSON
 5. Add an Angular controller in the same location following a similar pattern of the existing controllers
 6. Navigate to app/views and add a view that would show your data the way you want it to. As a starting point, you can refer to the existing views.
