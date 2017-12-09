@@ -65,7 +65,7 @@
                     <a class="brand" href="#">{{fullName}} - Profile</a>
                     <div class="nav-collapse collapse">
                         <ul class="nav">
-                            <li ng-repeat="sectionDetail in sectionDetails.sections">
+                            <li ng-repeat="sectionDetail in sectionDetails">
                                 <a ng-href="#{{sectionDetail.id}}">{{sectionDetail.name}}</a>
                             </li>
                         </ul>
@@ -81,7 +81,7 @@
                     <div class="well sidebar-nav">
                         <ul class="nav nav-list">
                             <li class="nav-header">Sidebar</li>
-                            <li ng-repeat="sectionDetail in sectionDetails.sections">
+                            <li ng-repeat="sectionDetail in sectionDetails">
                                 <a ng-href="#{{sectionDetail.id}}">{{sectionDetail.name}}</a>
                             </li>
                         </ul>

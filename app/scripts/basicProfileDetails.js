@@ -1,14 +1,16 @@
 angular.module('profileApp')
-    .controller('basicProfileDetailsCtrl', ['$scope', '$location', 'dataSvc', function ($scope, $location, dataSvc) {
-        $scope.firstName = "Anurag";
-        $scope.lastName = "Chatterjee";
-        $scope.fullName = $scope.firstName + " " + $scope.lastName;
+    .controller('basicProfileDetailsCtrl', ['$scope', '$location', 'dataSvc', function ($scope, $location, dataSvc) {        
         $scope.currentYear = new Date().getFullYear();
         $scope.sectionDetails = [];
 
-        dataSvc.getSections().then(function (res) {
+        dataSvc.getGeneralDetails().then(function (res) {
             if (res) {
-                $scope.sectionDetails = res.data;
+				debugger;
+				var generalDetailsData = res.data;
+				$scope.firstName = generalDetailsData.firstName;
+				$scope.lastName = generalDetailsData.lastName;
+				$scope.fullName = $scope.firstName + " " + $scope.lastName;
+                $scope.sectionDetails = generalDetailsData.sections;
             } else {
                 console.log("There was no response while getting the JSON")
             }
