@@ -1,7 +1,7 @@
 # A web application which contains a timeline of my academic and professional journey so far #
 
 ## References ##
-Base template have been obtained from here: http://getbootstrap.com/2.3.2/examples/fluid.html
+Base template was obtained from here: http://getbootstrap.com/2.3.2/examples/fluid.html
 
 
 ## How to run the application locally ##
@@ -34,3 +34,14 @@ Steps to set up HTTP server quickly:
      So, choose your tags wisely!!
    * **sections.json:** The sections that one will see in your web page. Well, you would not want to add items to it and might want to rename the sections only.
      However, if you want to add your own cool new section, then you would need to perform the items in the next section (no pun intended)
+	 
+## Add a new section ##
+1. Before I continue, it is expected that you have some basic understanding of how Angular works, if not then understand it and then proceed further. Else, proceed at your own risk.
+2. Design the data model of the data that is to be shown in the new section and define it as a JSON file and put it inside the ProfileData folder.
+3. Add your section to the sections.json following the format of the existing data
+4. Navigate to app/scripts and open dataSvc.js. Add a method there and perform a get operation to retrieve the values from the newly created JSON
+5. Add an Angular controller in the same location following a similar pattern of the existing controllers
+6. Navigate to app/views and add a view that would show your data the way you want it to. As a starting point, you can refer to the existing views.
+7. Go back to app/scripts and open routeConfig.js and add an entry there corresponding to your section ID, controller and view
+8. Finally, add your Angular controller script to index.js as a script tag
+9. **While updating functionality in an existing section** you would need to update the corresponding controller, view or data JSON and no other file needs to be updated
