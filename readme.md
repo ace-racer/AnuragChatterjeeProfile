@@ -22,7 +22,7 @@ Steps to set up HTTP server quickly:
 3. **Bootstrap v2.3** - Bootstrap is used to make the complete web app responsive to different screen sizes
    * Link: https://getbootstrap.com/
 
-## How to update the app to show your, *yes your!!*, profile
+## How to update the app to show your, *yes, your!!*, profile
 1. Fork and clone the source code to your local machine
 2. Navigate to the ProfileData folder
 3. Update the data in the below folders based on what they contain and following the format of the existing data:
