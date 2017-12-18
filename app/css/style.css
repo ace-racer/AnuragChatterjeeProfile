@@ -49,3 +49,7 @@ footer{
 .paginationControlListItemFound{
     background-color: lightgreen;
 }
+
+.paginationControlList li{
+    margin-left: 5px;
+} 
