@@ -59,11 +59,16 @@ angular.module('profileApp')
         /*
          Get the projects with the provided text
          */
-        $scope.searchItemWithText = function () {
+        $scope.searchItemWithText = function (pageNumber) {
+            if(!pageNumber)
+            {
+                pageNumber = $scope.FIRST_PAGE_NUMBER;
+            }
+
             text = $scope.filterText;
             $scope.tagClasses = {};
             var minimumCharactersForSearch = 1;
-            if (text && text.length > minimumCharactersForSearch) {
+            if (text && text.length > minimumCharactersForSearch) {                
                 var projectDetails = $scope.allProjectDetails;
                 var projectDetailsToShow = [];
 
@@ -97,7 +102,7 @@ angular.module('profileApp')
                 projectDetailsToShow = $scope.allProjectDetails;
             }
 
-            $scope.projectDetails = $scope.getItemsToShowOnPage(projectDetailsToShow, $scope.currentPage);
+            $scope.projectDetails = $scope.getItemsToShowOnPage(projectDetailsToShow, pageNumber);
             $scope.totalPagesRequired = $scope.getNumberOfPagesToShow(projectDetailsToShow);
         }
 
@@ -157,7 +162,7 @@ angular.module('profileApp')
 
         $scope.setCurrentPage = function (pageNumber) {
             $scope.currentPage = pageNumber;
-            $scope.searchItemWithText();
+            $scope.searchItemWithText(pageNumber);
         }
 
         /*
