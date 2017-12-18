@@ -18,18 +18,18 @@
                 <div class="container alert alert-warning" ng-show="!projectDetails.length">
                     <p>No project(s) with the tag: {{filterText}}</p>
                 </div>
-                <div>
-                    <ul class="inline paginationControlList">
-                        <li>
-                            <h5>Pages:</h5>
-                        </li>
-                        <li ng-repeat="pageNumber in totalPagesRequired">
-                            <a href="#/projects" ng-click="setCurrentPage(pageNumber)" ng-class="getClassForSelectedPage(pageNumber)">{{pageNumber}}</a>|
-                        </li>
-                    </ul>
-                </div>
-                <hr/>
                 <div class="col-xs-12 container" ng-show="projectDetails.length">
+                    <div>
+                        <ul class="inline paginationControlList">
+                            <li>
+                                <h5>Pages:</h5>
+                            </li>
+                            <li ng-repeat="pageNumber in totalPagesRequired">
+                                <a href="#/projects" ng-click="setCurrentPage(pageNumber)" ng-class="getClassForSelectedPage(pageNumber)">{{pageNumber}}</a>|
+                            </li>
+                        </ul>
+                    </div>
+                    <hr/>
                     <table class="table-responsive table-hover table-striped">
                         <thead>
                             <tr>
@@ -60,17 +60,17 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>
-                <hr/>
-                <div>
-                    <ul class="inline paginationControlList">
-                        <li>
-                            <h5>Pages:</h5>
-                        </li>
-                        <li ng-repeat="pageNumber in totalPagesRequired">
-                            <a href="#/projects" ng-click="setCurrentPage(pageNumber)" ng-class="getClassForSelectedPage(pageNumber)">{{pageNumber}}</a>|
-                        </li>
-                    </ul>
+                    <hr/>
+                    <div>
+                        <ul class="inline paginationControlList">
+                            <li>
+                                <h5>Pages:</h5>
+                            </li>
+                            <li ng-repeat="pageNumber in totalPagesRequired">
+                                <a href="#/projects" ng-click="setCurrentPage(pageNumber)" ng-class="getClassForSelectedPage(pageNumber)">{{pageNumber}}</a>|
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
