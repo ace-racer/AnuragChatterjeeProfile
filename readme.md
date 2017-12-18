@@ -49,7 +49,7 @@ Steps to set up HTTP server quickly:
 8. Finally, add your Angular controller script to index.js as a script tag
 9. **While updating functionality in an existing section** you would need to update the corresponding controller, view or data JSON and no other file needs to be updated
 
-## Deploying the application to the internet##
+## Deploying the application to the internet ##
 Please refer the link [here](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/) on how to host your source code in GitHub as GitHub pages. This will enable you to host your profile as a GitHub page and allow people all over the world to access your profile via the internet.
 
 ## New features ##
