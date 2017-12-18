@@ -4,8 +4,7 @@ angular.module('profileApp')
         $scope.sectionDetails = [];
 
         dataSvc.getGeneralDetails().then(function (res) {
-            if (res) {
-				debugger;
+            if (res) {				
 				var generalDetailsData = res.data;
 				$scope.firstName = generalDetailsData.firstName;
 				$scope.lastName = generalDetailsData.lastName;

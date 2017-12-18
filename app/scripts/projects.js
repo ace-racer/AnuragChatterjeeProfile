@@ -2,19 +2,42 @@ angular.module('profileApp')
     .controller('projectsCtrl', ['$scope', '$location', 'dataSvc', function ($scope, $location, dataSvc) {        
         $scope.allProjectDetails = [];
         $scope.tagClasses = {};
+        $scope.MAX_ITEMS_TO_SHOW = 50;
+        $scope.ITEMS_PER_PAGE = 3;
+        $scope.FIRST_PAGE_NUMBER = 1;
+
+        // the current page that is shown
+        $scope.currentPage = $scope.FIRST_PAGE_NUMBER;
+
+        $scope.totalItemsToShow = $scope.MAX_ITEMS_TO_SHOW;
+        $scope.itemsPerPage = $scope.ITEMS_PER_PAGE;
 
         dataSvc.getProjects().then(function (res) {
             if (res) {
                 var projectDetailsObj = res.data;
                 var projectDetails = projectDetailsObj.details;
-                for (var itr = 0; itr < projectDetails.length; itr++) {
+                var numProjects = projectDetails.length;
+                $scope.totalItemsToShow = Math.min($scope.MAX_ITEMS_TO_SHOW, numProjects);
+
+                // number of pages with the full content
+                var numPagesWithFullContent = numProjects/$scope.itemsPerPage;
+
+                // number of items in the last page
+                var numItemsLastPage = numProjects % $scope.itemsPerPage;
+                
+                // populate the month name from the month number
+                for (var itr = 0; itr < numProjects; itr++) {
                     projectDetails[itr].monthName = $scope.getMonthNameFromNumber(projectDetails[itr].month);
                 }
-
-                $scope.projectDetails = projectDetailsObj.details;
-                for (var itr = 0; itr < projectDetails.length; itr++) {
+                                               
+                // populate all project details master array
+                for (var itr = 0; itr < numProjects; itr++) {
                     $scope.allProjectDetails.push(projectDetails[itr]);
                 }
+
+                 // Bind the project details to the view
+                 var projectDetailsForPage = $scope.getItemsToShowOnPage($scope.allProjectDetails, $scope.currentPage);                
+                 $scope.projectDetails = projectDetailsForPage;
             } else {
                 console.log("There was no response while getting the JSON")
             }
@@ -76,7 +99,7 @@ angular.module('profileApp')
                 projectDetailsToShow = $scope.allProjectDetails;
             }
 
-            $scope.projectDetails = projectDetailsToShow;
+            $scope.projectDetails = $scope.getItemsToShowOnPage(projectDetailsToShow, $scope.currentPage);
         }
 
         $scope.getTagClass = function (tagName) {
@@ -85,6 +108,23 @@ angular.module('profileApp')
             } else {
                 return "tag-span";
             }
+        }
+
+        /*
+           Get the items from the array to be shown given by the page number (1 indexed)
+        */ 
+        $scope.getItemsToShowOnPage = function (itemsForPagination, pageNumber){
+            if(itemsForPagination && pageNumber >= 1)
+            {
+              debugger;  
+              var numItemsForPagination = itemsForPagination.length;
+              var totalItemsToShow = Math.min($scope.MAX_ITEMS_TO_SHOW, numItemsForPagination);  
+              var startIndexForPage = (pageNumber - 1)*$scope.itemsPerPage;
+              var excludedEndIndexForPage = Math.min(totalItemsToShow, pageNumber * $scope.itemsPerPage);
+              return itemsForPagination.slice(startIndexForPage, excludedEndIndexForPage);
+            }
+
+            return null;
         }
 
     }]);
