@@ -40,3 +40,12 @@ footer{
     font-weight: bold; 
     padding: 5px;   
 }
+
+.paginationControlList{
+    list-style-type: none;
+    margin: 0;
+}
+
+.paginationControlListItemFound{
+    background-color: lightgreen;
+}

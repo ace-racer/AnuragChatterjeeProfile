@@ -18,9 +18,9 @@
                 <div class="container alert alert-warning" ng-show="!projectDetails.length">
                     <p>No project(s) with the tag: {{filterText}}</p>
                 </div>
-                <div class="paginationControlDiv">
-                    <ul ng-repeat="pageNumber in totalPagesRequired" class="paginationControlList">
-                        <li ng-click="setCurrentPage(pageNumber)">{{pageNumber}}</li>
+                <div>
+                    <ul ng-repeat="pageNumber in totalPagesRequired" class="inline paginationControlList">                        
+                            <li><a href="#/projects" ng-click="setCurrentPage(pageNumber)" ng-class="getClassForSelectedPage(pageNumber)">{{pageNumber}}</a></li>
                     </ul>
                 </div>
                 <div class="col-xs-12 container" ng-show="projectDetails.length">

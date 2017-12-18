@@ -113,8 +113,7 @@ angular.module('profileApp')
            Get the items from the array to be shown given by the page number (1 indexed)
         */
         $scope.getItemsToShowOnPage = function (itemsForPagination, pageNumber) {
-            if (itemsForPagination && pageNumber >= 1) {
-                debugger;
+            if (itemsForPagination && pageNumber >= 1) {                
                 var numItemsForPagination = itemsForPagination.length;
                 var totalItemsToShow = Math.min($scope.MAX_ITEMS_TO_SHOW, numItemsForPagination);
                 var startIndexForPage = (pageNumber - 1) * $scope.itemsPerPage;
@@ -159,6 +158,18 @@ angular.module('profileApp')
         $scope.setCurrentPage = function (pageNumber) {
             $scope.currentPage = pageNumber;
             $scope.searchItemWithText();
+        }
+
+        /*
+          Get the class for the selected page in the list
+        */
+        $scope.getClassForSelectedPage = function(pageNumber){
+            if(pageNumber == $scope.currentPage)
+            {
+                return "paginationControlListItemFound";
+            }
+
+            return "";
         }
 
     }]);
