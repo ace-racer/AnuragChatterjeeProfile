@@ -1,5 +1,5 @@
 angular.module('profileApp')
-    .controller('projectsCtrl', ['$scope', '$location', 'dataSvc', function ($scope, $location, dataSvc) {        
+    .controller('projectsCtrl', ['$scope', '$location', 'dataSvc', function ($scope, $location, dataSvc) {
         $scope.allProjectDetails = [];
         $scope.tagClasses = {};
         $scope.MAX_ITEMS_TO_SHOW = 50;
@@ -8,6 +8,9 @@ angular.module('profileApp')
 
         // the current page that is shown
         $scope.currentPage = $scope.FIRST_PAGE_NUMBER;
+
+        // the total number of pages that are required
+        $scope.totalPagesRequired = [1];
 
         $scope.totalItemsToShow = $scope.MAX_ITEMS_TO_SHOW;
         $scope.itemsPerPage = $scope.ITEMS_PER_PAGE;
@@ -19,25 +22,21 @@ angular.module('profileApp')
                 var numProjects = projectDetails.length;
                 $scope.totalItemsToShow = Math.min($scope.MAX_ITEMS_TO_SHOW, numProjects);
 
-                // number of pages with the full content
-                var numPagesWithFullContent = numProjects/$scope.itemsPerPage;
+                $scope.totalPagesRequired = $scope.getNumberOfPagesToShow(projectDetails);
 
-                // number of items in the last page
-                var numItemsLastPage = numProjects % $scope.itemsPerPage;
-                
                 // populate the month name from the month number
                 for (var itr = 0; itr < numProjects; itr++) {
                     projectDetails[itr].monthName = $scope.getMonthNameFromNumber(projectDetails[itr].month);
                 }
-                                               
+
                 // populate all project details master array
                 for (var itr = 0; itr < numProjects; itr++) {
                     $scope.allProjectDetails.push(projectDetails[itr]);
                 }
 
-                 // Bind the project details to the view
-                 var projectDetailsForPage = $scope.getItemsToShowOnPage($scope.allProjectDetails, $scope.currentPage);                
-                 $scope.projectDetails = projectDetailsForPage;
+                // Bind the project details to the view
+                var projectDetailsForPage = $scope.getItemsToShowOnPage($scope.allProjectDetails, $scope.currentPage);
+                $scope.projectDetails = projectDetailsForPage;
             } else {
                 console.log("There was no response while getting the JSON")
             }
@@ -60,7 +59,7 @@ angular.module('profileApp')
         /*
          Get the projects with the provided text
          */
-        $scope.searchItemWithText = function () {            
+        $scope.searchItemWithText = function () {
             text = $scope.filterText;
             $scope.tagClasses = {};
             var minimumCharactersForSearch = 1;
@@ -79,10 +78,9 @@ angular.module('profileApp')
                         var tagItemLower = projectDetails[itr].tags[jtr].toLowerCase();
 
                         // if a portion of any tag matches the text in case ignorant search
-                        if(tagItemLower.indexOf(textLower) >= 0)
-                        {
+                        if (tagItemLower.indexOf(textLower) >= 0) {
                             // Add the item only once
-                            if (shouldAddProject) {                             
+                            if (shouldAddProject) {
                                 projectDetailsToShow.push(projectDetails[itr]);
                                 shouldAddProject = false;
                             }
@@ -90,7 +88,7 @@ angular.module('profileApp')
                             // Add class for the Tag Span
                             if ($scope.tagClasses[projectDetails[itr].tags[jtr]] == null) {
                                 $scope.tagClasses[projectDetails[itr].tags[jtr]] = "tag-span-found";
-                            }                    
+                            }
                         }
                     }
                 }
@@ -100,6 +98,7 @@ angular.module('profileApp')
             }
 
             $scope.projectDetails = $scope.getItemsToShowOnPage(projectDetailsToShow, $scope.currentPage);
+            $scope.totalPagesRequired = $scope.getNumberOfPagesToShow(projectDetailsToShow);
         }
 
         $scope.getTagClass = function (tagName) {
@@ -112,19 +111,53 @@ angular.module('profileApp')
 
         /*
            Get the items from the array to be shown given by the page number (1 indexed)
-        */ 
-        $scope.getItemsToShowOnPage = function (itemsForPagination, pageNumber){
-            if(itemsForPagination && pageNumber >= 1)
-            {
-              debugger;  
-              var numItemsForPagination = itemsForPagination.length;
-              var totalItemsToShow = Math.min($scope.MAX_ITEMS_TO_SHOW, numItemsForPagination);  
-              var startIndexForPage = (pageNumber - 1)*$scope.itemsPerPage;
-              var excludedEndIndexForPage = Math.min(totalItemsToShow, pageNumber * $scope.itemsPerPage);
-              return itemsForPagination.slice(startIndexForPage, excludedEndIndexForPage);
+        */
+        $scope.getItemsToShowOnPage = function (itemsForPagination, pageNumber) {
+            if (itemsForPagination && pageNumber >= 1) {
+                debugger;
+                var numItemsForPagination = itemsForPagination.length;
+                var totalItemsToShow = Math.min($scope.MAX_ITEMS_TO_SHOW, numItemsForPagination);
+                var startIndexForPage = (pageNumber - 1) * $scope.itemsPerPage;
+                var excludedEndIndexForPage = Math.min(totalItemsToShow, pageNumber * $scope.itemsPerPage);
+                return itemsForPagination.slice(startIndexForPage, excludedEndIndexForPage);
             }
 
             return null;
+        }
+
+        /*
+         Get the contents for the pagination control as an array to show on the screen        
+        */
+        $scope.getNumberOfPagesToShow = function (itemsForPagination) {
+            if (itemsForPagination) {
+                var totalItemsForPagination = Math.min($scope.MAX_ITEMS_TO_SHOW, itemsForPagination.length);
+
+                // number of pages with the full content
+                var numPagesWithFullContent = totalItemsForPagination / $scope.itemsPerPage;
+
+                // number of items in the last page
+                var numItemsLastPage = totalItemsForPagination % $scope.itemsPerPage;
+
+                // additional page to show remaining items not accomodated completely in the earlier pages
+                var additionalPage = 0;
+                if (numItemsLastPage != 0) {
+                    additionalPage = 1;
+                }
+
+                var totalItems = numPagesWithFullContent + additionalPage;
+                var pageNumbers = [];
+                for (itr = 1; itr <= totalItems; itr++) {
+                    pageNumbers.push(itr);
+                }
+
+                return pageNumbers;
+            }
+
+            return null;
+        }
+
+        $scope.setCurrentPage = function () {
+            alert("Clicked");
         }
 
     }]);
