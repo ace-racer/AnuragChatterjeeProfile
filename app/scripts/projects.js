@@ -156,8 +156,9 @@ angular.module('profileApp')
             return null;
         }
 
-        $scope.setCurrentPage = function () {
-            alert("Clicked");
+        $scope.setCurrentPage = function (pageNumber) {
+            $scope.currentPage = pageNumber;
+            $scope.searchItemWithText();
         }
 
     }]);

@@ -20,7 +20,7 @@
                 </div>
                 <div class="paginationControlDiv">
                     <ul ng-repeat="pageNumber in totalPagesRequired" class="paginationControlList">
-                        <li ng-click="setCurrentPage()">{{pageNumber}}</li>
+                        <li ng-click="setCurrentPage(pageNumber)">{{pageNumber}}</li>
                     </ul>
                 </div>
                 <div class="col-xs-12 container" ng-show="projectDetails.length">
