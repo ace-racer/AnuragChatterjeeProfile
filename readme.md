@@ -45,3 +45,6 @@ Steps to set up HTTP server quickly:
 7. Go back to app/scripts and open routeConfig.js and add an entry there corresponding to your section ID, controller and view
 8. Finally, add your Angular controller script to index.js as a script tag
 9. **While updating functionality in an existing section** you would need to update the corresponding controller, view or data JSON and no other file needs to be updated
+
+## New features ##
+1. Simple pagination for upto 50 records added to projects page for easy access! Pagination works for searches also.
