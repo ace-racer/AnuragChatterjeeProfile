@@ -62,6 +62,7 @@ angular.module('profileApp')
         $scope.searchItemWithText = function (pageNumber) {
             if(!pageNumber)
             {
+                $scope.currentPage = $scope.FIRST_PAGE_NUMBER;
                 pageNumber = $scope.FIRST_PAGE_NUMBER;
             }
 
