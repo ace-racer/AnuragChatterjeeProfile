@@ -1,5 +1,8 @@
 # A web application which contains a timeline of my academic and professional journey so far #
 
+## View running application ##
+[My Profile](https://ace-racer.github.io/AnuragChatterjeeProfile "Anurag's profile")
+
 ## References ##
 Base template was obtained from here: http://getbootstrap.com/2.3.2/examples/fluid.html
 
