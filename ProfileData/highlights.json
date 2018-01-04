@@ -6,14 +6,24 @@
       "institute_url": "https://www.microsoft.com/india/globaldelivery/",
       "period": "June 2014 to December 2017",
       "logo_url": "http://ncmedia.azureedge.net/ncmedia/2014/10/MSFT_logo_rgb_C-Gray.png",
-      "description": "Technical Consultant at Microsoft India. Job responsibilites included designing and building solutions for Microsoft's customers using latest technology from the Microsoft stack. Experienced in interactions with customers across geographies. Job roles undertaken include Technical Lead, Project Manager and Business Analyst."
+      "description": "Technical Consultant at Microsoft India. Job responsibilites included designing and building solutions for Microsoft's customers using latest technology from the Microsoft stack. Experienced in interactions with customers across geographies. Job roles undertaken include Technical Lead, Project Manager and Business Analyst.",
+      "order":20
     },
     {
       "institute": "Indian Institute of Engineering Science and Technology, Shibpur",
       "institute_url": "http://www.iiests.ac.in/",
       "period": "July 2010 to May 2014",
       "logo_url": "http://www.iiests.ac.in/images/iiest-logo.png",
-      "description": "Graduated from IIEST, Shibpur (formerly Bengal Engineering and Science University) with first division in B.E. (Computer Science and Technology). Additional courses undertaken were programming, algorithms, data-structures, discrete mathematics, operating systems, compiler theory and microprocessors."
+      "description": "Graduated from IIEST, Shibpur (formerly Bengal Engineering and Science University) with first division in B.E. (Computer Science and Technology). Additional courses undertaken were programming, algorithms, data-structures, discrete mathematics, operating systems, compiler theory and microprocessors.",
+      "order":10
+    },
+    {
+      "institute": "National University of Singapore",
+      "institute_url": "https://www.iss.nus.edu.sg/",
+      "period": "January 2018 to present",
+      "logo_url": "http://www.nus.edu.sg/identity/images/identity/logo/NUS%20logo%20orange%20b_vertical.jpg",
+      "description": "Currently pursuing Master of Technology specializing in Knowledge Engineering. Will pursue courses in data science, machine learning and big data to gather intelligent insights from data.",
+      "order":30
     }
   ]
 }

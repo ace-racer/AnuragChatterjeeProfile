@@ -22,7 +22,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr ng-repeat="item in information">
+                                    <tr ng-repeat="item in information| orderBy : 'order' : true">
                                         <td class="col-md-2"><a ng-href="{{item.institute_url}}"><img ng-src="{{item.logo_url}}" class="container-img-small" /></a></td>                                        
                                         <td class="col-md-2">{{item.period}}</td>
                                         <td class="col-md-4"><div ng-bind-html="item.description"></div></td>
