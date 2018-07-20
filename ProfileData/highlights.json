@@ -3,9 +3,9 @@
   "information": [
     {
       "institute": "Microsoft",
-      "institute_url": "https://www.microsoft.com/india/globaldelivery/",
+      "institute_url": "https://www.microsoft.com/en-in/microsoftservices/about.aspx",
       "period": "June 2014 to December 2017",
-      "logo_url": "http://ncmedia.azureedge.net/ncmedia/2014/10/MSFT_logo_rgb_C-Gray.png",
+      "logo_url": "img/mslogo.jpg",
       "description": "Technical Consultant at Microsoft India. Job responsibilites included designing and building solutions for Microsoft's customers using latest technology from the Microsoft stack. Experienced in interactions with customers across geographies. Job roles undertaken include Technical Lead, Project Manager and Business Analyst.",
       "order":20
     },
@@ -24,6 +24,14 @@
       "logo_url": "http://www.nus.edu.sg/identity/images/identity/logo/NUS%20logo%20orange%20b_vertical.jpg",
       "description": "Currently pursuing Master of Technology specializing in Knowledge Engineering. Will pursue courses in data science, machine learning and big data to gather intelligent insights from data.",
       "order":30
+    },
+	{
+      "institute": "ViSenze",
+      "institute_url": "https://www.visenze.com/",
+      "period": "February 2018 to May 2018",
+      "logo_url": "img/visenzelogo.jpg",
+      "description": "Data analyst and data engineering intern",
+      "order":25
     }
   ]
 }
